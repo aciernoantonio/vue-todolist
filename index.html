@@ -25,6 +25,19 @@
             </div>
             <!-- /.add_task -->
 
+            <div class="task_list">
+
+                <ul>
+
+                    <li v-for="task in tasks" :class="task.done === true ? `completed` : `` ">
+                        {{task.text}}
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- /.task_list -->
+
         </div>
 
         
