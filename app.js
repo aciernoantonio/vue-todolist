@@ -32,5 +32,9 @@ const app = new Vue({
 
     methods: {
 
+        removeTodo(i){
+            this.tasks.splice(i, 1)
+        }
+
     }
 })
