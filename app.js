@@ -3,6 +3,8 @@ const app = new Vue({
 
     data: {
 
+        newTask: ``,
+
         completed: `completed`,
 
         tasks: [
@@ -34,6 +36,11 @@ const app = new Vue({
 
         removeTodo(i){
             this.tasks.splice(i, 1)
+        },
+
+        addTask(){
+            this.tasks.push({text: this.newTask, done: false})
+            console.log(this.tasks);
         }
 
     }
