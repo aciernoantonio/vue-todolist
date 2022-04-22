@@ -34,7 +34,7 @@
 
                 <ul>
 
-                    <li v-for="(task, index) in tasks" :class="task.done === true ? `completed` : `` ">
+                    <li @click="check(index)" v-for="(task, index) in tasks" :class="task.done === true ? `completed` : `` ">
                         
                         <div class="task">
 

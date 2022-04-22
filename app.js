@@ -41,6 +41,14 @@ const app = new Vue({
         addTask(){
             this.tasks.push({text: this.newTask, done: false})
             console.log(this.tasks);
+        },
+
+        check(i){
+            if(this.tasks[i].done != true){
+                this.tasks[i].done = true;
+            } else {
+                this.tasks[i].done = false;
+            }
         }
 
     }
